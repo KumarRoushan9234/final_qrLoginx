@@ -46,7 +46,7 @@ Here are the screenshots of different parts of the project for better understand
 
 This screenshot shows the dashboard where partners can view and generate QR codes for their locations. They can input their business details such as name, location, and contact information.
 
-![Partner App - Dashboard](./screenshots/Screenshot_2025-03-07_184059.png)
+![Partner App - Dashboard](screenshots/Screenshot 2025-03-07 184427.png)
 
 ### **2. Partner App - QR Code Generation**
 
@@ -124,7 +124,7 @@ Users can view a list of all available partners for checking in. This list displ
 
 Admins can manage user check-ins from this interface, approving or rejecting based on the details submitted.
 
-![Admin Dashboard - Check-In Management](screenshots/Screenshot_2025-03-07_184357.png)
+![Admin Dashboard - Check-In Management](screenshots\Screenshot 2025-03-07 184059.png)
 
 ### **15. Admin Dashboard - Detailed User View**
 
