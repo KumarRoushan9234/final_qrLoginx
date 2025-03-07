@@ -1,0 +1,60 @@
+import { useState } from "react";
+import useAuthStore from "../../store/authStore";
+import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { login, loginWithGoogle } = useAuthStore();
+  const navigate = useNavigate();
+
+  const handleLogin = async () => {
+    await login(email, password);
+    navigate("/");
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-2xl font-bold mb-4">Login</h1>
+
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        className="p-2 border rounded w-80"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="p-2 border rounded mt-2 w-80"
+      />
+
+      <button
+        onClick={handleLogin}
+        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded w-80"
+      >
+        Login
+      </button>
+
+      <button
+        onClick={loginWithGoogle}
+        className="mt-2 flex items-center justify-center bg-red-500 text-white px-4 py-2 rounded w-80"
+      >
+        <FcGoogle className="text-2xl mr-2" /> Login with Google
+      </button>
+
+      <p className="mt-4">
+        Don't have an account?{" "}
+        <a href="/signup" className="text-blue-500 underline">
+          Sign up
+        </a>
+      </p>
+    </div>
+  );
+};
+
+export default Login;
