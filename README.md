@@ -46,97 +46,97 @@ Here are the screenshots of different parts of the project for better understand
 
 This screenshot shows the dashboard where partners can view and generate QR codes for their locations. They can input their business details such as name, location, and contact information.
 
-![Partner App - Dashboard](screenshots/Screenshot 2025-03-07 184427.png)
+![Partner App - Dashboard](./assets/images/Screenshot%202025-03-07%20184059.png)
 
 ### **2. Partner App - QR Code Generation**
 
 In this view, partners can generate QR codes for their location. After filling in the form, they click "Generate QR" to produce a unique QR code for check-ins.
 
-![Partner App - QR Code Generation](./screenshots/Screenshot_2025-03-07_184318.png)
+![Partner App - QR Code Generation](./assets/images/Screenshot%202025-03-07%20184318.png)
 
 ### **3. User App - Login Page**
 
 The login page allows users to authenticate via email or Google OAuth, with simple options to sign up or log in. The user interface is clean and responsive.
 
-![User App - Login Page](./screenshots/Screenshot_2025-03-07_184544.png)
+![User App - Login Page](./assets/images/Screenshot%202025-03-07%20184544.png)
 
 ### **4. User App - QR Code Scanning**
 
 This screenshot shows the screen where users scan QR codes. Upon scanning a code, users are redirected to the check-in submission page.
 
-![User App - QR Code Scanning](./screenshots/Screenshot_2025-03-07_184135.png)
+![User App - QR Code Scanning](./assets/images/Screenshot%202025-03-07%20184135.png)
 
 ### **5. User App - Check-In Form**
 
 After scanning the QR code, users are shown this form to submit their personal details and confirm check-in information.
 
-![User App - Check-In Form](./screenshots/Screenshot_2025-03-07_184330.png)
+![User App - Check-In Form](./assets/images/Screenshot%202025-03-07%20184330.png)
 
 ### **6. User App - Profile Page**
 
 Users can modify their details and view their check-in history directly from their profile page.
 
-![User App - Profile Page](./screenshots/Screenshot_2025-03-07_184555.png)
+![User App - Profile Page](./assets/images/Screenshot%202025-03-07%20184555.png)
 
 ### **7. Partner App - Submitted User Details**
 
 Partners can view the submitted details from users who scanned their QR codes, allowing them to approve or reject check-ins.
 
-![Partner App - Submitted User Details](./screenshots/Screenshot_2025-03-07_184211.png)
+![Partner App - Submitted User Details](./assets/images/Screenshot%202025-03-07%20184211.png)
 
 ### **8. Admin Dashboard**
 
 The Admin dashboard enables the viewing of all user check-ins and status updates. Admins can approve or reject check-ins.
 
-![Admin Dashboard](./screenshots/Screenshot_2025-03-07_184340.png)
+![Admin Dashboard](./assets/images/Screenshot%202025-03-07%20184340.png)
 
 ### **9. Partner App - Location Management**
 
 Partners can manage their locations, edit details, and update QR code generation for future check-ins.
 
-![Partner App - Location Management](./screenshots/Screenshot_2025-03-07_184605.png)
+![Partner App - Location Management](./assets/images/Screenshot%202025-03-07%20184605.png)
 
 ### **10. User App - QR Code Scanning with Success**
 
 This is an example of a successful QR code scan. Once the scan is completed, the user is automatically redirected to submit their information.
 
-![User App - Successful QR Code Scan](./screenshots/Screenshot_2025-03-07_184221.png)
+![User App - Successful QR Code Scan](./assets/images/Screenshot%202025-03-07%20184221.png)
 
 ### **11. User App - History Page**
 
 Users can access their check-in history and see all locations where they have checked in previously.
 
-![User App - History Page](./screenshots/Screenshot_2025-03-07_184350.png)
+![User App - History Page](./assets/images/Screenshot%202025-03-07%20184350.png)
 
 ### **12. User App - Check-In Confirmation**
 
 This screenshot illustrates the confirmation screen where users finalize their check-in after entering details.
 
-![User App - Check-In Confirmation](./screenshots/Screenshot_2025-03-07_184800.png)
+![User App - Check-In Confirmation](./assets/images/Screenshot%202025-03-07%20184800.png)
 
 ### **13. User App - All Partners Page**
 
 Users can view a list of all available partners for checking in. This list displays partner names and locations.
 
-![User App - All Partners Page](./screenshots/Screenshot_2025-03-07_184246.png)
+![User App - All Partners Page](./assets/images/Screenshot%202025-03-07%20184246.png)
 
 ### **14. Admin Dashboard - Check-In Management**
 
 Admins can manage user check-ins from this interface, approving or rejecting based on the details submitted.
 
-![Admin Dashboard - Check-In Management](screenshots\Screenshot 2025-03-07 184059.png)
+![Admin Dashboard - Check-In Management](./assets/images/Screenshot%202025-03-07%20184059.png)
 
 ### **15. Admin Dashboard - Detailed User View**
 
 Admins can view detailed information about users who scanned their QR codes. This includes timestamps and approval status.
 
-![Admin Dashboard - Detailed User View](./screenshots/Screenshot_2025-03-07_184956.png)
+![Admin Dashboard - Detailed User View](./assets/images/Screenshot%202025-03-07%20184956.png)
 
 ### **16. User App - Confirmation of Successful Check-In**
 
 This is the success confirmation page for users once their check-in has been approved.
 
-![User App - Confirmation of Check-In](./screenshots/Screenshot_2025-03-07_184301.png)
+![User App - Confirmation of Check-In](./assets/images/Screenshot%202025-03-07%20184301.png)
 
 ---
 
@@ -170,4 +170,51 @@ This is the success confirmation page for users once their check-in has been app
 ```bash
 git clone https://github.com/KumarRoushan9234/final_qrLoginx.git
 cd final_qrLoginx
+```
+
+### 2. Install Dependencies
+
+Install the required dependencies for both the frontend and backend.
+
+```
+# For Backend
+cd backend
+npm install
+
+# For Partner App
+cd ../partner-app
+npm install
+
+# For User App
+cd ../user-app
+npm install
+
+```
+
+### 3. Set Up Environment Variables
+
+Make sure to create a .env file in each project with the necessary environment variables, such as:
+
+```
+MONGO_URI=your_mongo_db_connection_string
+JWT_SECRET=your_jwt_secret_key
+```
+
+### Run the Project
+
+Start all applications locally:
+
+```
+# Start Backend
+cd backend
+npm start
+
+# Start Partner App
+cd ../partner-app
+npm start
+
+# Start User App
+cd ../user-app
+npm start
+
 ```
