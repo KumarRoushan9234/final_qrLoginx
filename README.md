@@ -124,7 +124,7 @@ Users can view a list of all available partners for checking in. This list displ
 
 Admins can manage user check-ins from this interface, approving or rejecting based on the details submitted.
 
-![Admin Dashboard - Check-In Management](./screenshots/Screenshot_2025-03-07_184357.png)
+![Admin Dashboard - Check-In Management](screenshots/Screenshot_2025-03-07_184357.png)
 
 ### **15. Admin Dashboard - Detailed User View**
 
